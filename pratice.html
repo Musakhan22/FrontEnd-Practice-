@@ -1,20 +1,44 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon"  href="images/google.jpg">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/google.jpg" />
     <title>New pratice webpage</title>
-</head>
-<body>
+  </head>
+  <body>
     <form action="index.php" method="post">
-        <label for="name">name:</label>
-        <input type="text" id="name" required>
-        <label for="password">password:</label>
-        <input type="password" id="password" required><br>
-        <button type="submit">Submit</button>
-        <button type="reset">reset</button>
+      <label for="name">name:</label>
+      <input type="text" id="name" required />
+      <label for="password">password:</label>
+      <input type="password" id="password" required /><br />
+      <label for="date">date:</label>
+      <input type="date" id="date" /><br />
+      <label for="quantity">quantity:</label>
+      <input type="number" id="quantity" /><br />
+      <label for="title">Title:</label>
+      <label for="mr">Mr.</label>
+      <input type="radio" id="mr" value="mr." name="title" />
+      <label for="ms">MS.</label>
+      <input type="radio" id="ms" value="ms." name="title" />
+      <label for="phd">PHD.</label>
+      <input type="radio" id="phd" value="phd." name="title" /><br />
+      <label for="payment">Payment:</label>
+      <select>
+        <option value="visa">Visa</option>
+        <option value="mastercard">MasterCard</option>
+        <option value="giftcard">GiftCard</option></select
+      ><br />
+      <label for="subscribe">SUB:</label>
+      <input type="checkbox" id="subscribe" /><br />
+      <label for="text">Text:</label>
+      <textarea id="text"></textarea><br />
 
+      <label for="file">FILE:</label>
+      <input type="file" id="file" accept="image/png" />
+
+      <button type="submit">Submit</button><br />
+      <button type="reset">reset</button>
     </form>
-</body>
+  </body>
 </html>
